@@ -53,7 +53,7 @@ battleship = (board_dimension) => {
       return total_ships
     }
 
-    // Generate $ Ships with random values and into gameboard
+    // Generate  Ships with random values and add into a gameboard
     function fill_board_with_ships(game_board, number){
       dummy_list = game_board
     do
@@ -64,7 +64,7 @@ battleship = (board_dimension) => {
     return dummy_list
   }
 
-    //function to check players shoot
+    //function to make players shoot
     function shoot(board,x,y){
       if (board[x][y] == 1){
         alert("you hit the ship")
@@ -78,15 +78,15 @@ battleship = (board_dimension) => {
   //create players emty borads
   emty_player_1_board = create_game_board(the_number)
   emty_player_2_board = create_game_board(the_number)
-  console.log(emty_player_1_board)
-  console.log(emty_player_2_board)
-  console.log("sinan")
-  console.log("cengiz")
+  // console.log(emty_player_1_board)
+  // console.log(emty_player_2_board)
+  // console.log("sinan")
+  // console.log("cengiz")
   //fill boards with ships
   player_1_board = fill_board_with_ships(emty_player_1_board, the_number)
   player_2_board = fill_board_with_ships(emty_player_2_board, the_number)
-  console.log(player_1_board)
-  console.log(player_2_board)
+  // console.log(player_1_board)
+  // console.log(player_2_board)
   //craete player objects
   player_object ={
     name : "",
